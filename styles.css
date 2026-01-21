@@ -99,6 +99,7 @@ body {
     line-height: 1.2;
     font-weight: 700;
     color: white;
+    text-decoration: none;
     transition: color 0.3s;
 }
 .menu-link:hover { color: #F5BC1C; }
@@ -114,6 +115,7 @@ body {
     justify-content: center;
     cursor: pointer;
     transition: opacity 0.3s;
+    text-decoration: none;
 }
 
 .logo-svg-menu {
@@ -126,6 +128,10 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     font-size: 28px;
+}
+
+.logo-bold-style-menu {
+    font-weight: 700;
 }
 
 .icon-circle {
