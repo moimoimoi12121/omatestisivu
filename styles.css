@@ -1,4 +1,4 @@
-/* Asetetaan mukautetut fontit */
+/* 1. Kaikki importit tiedoston alkuun */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans:wght@400;700;800&display=swap');
 
 /* Päätyylit */
@@ -7,14 +7,24 @@ body {
     background-color: #fff;
     color: #1e293b;
     overflow-x: hidden;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #2563eb;
+    --accent-color: #3b82f6;
+    --bg-dark: #0f172a;
+    --card-bg: #1e293b;
+    --text-light: #f8fafc;
+    --text-dim: #94a3b8;
 }
 
 /* Yläpalkki ja Hero-osa */
 .navbar-dark-blue {
-    background-color: #193158
+    background-color: #193158;
 }
 .logo-bold {
-    font-weight: 700
+    font-weight: 700;
 }
 .hero-section {
     height: 85vh;
@@ -25,7 +35,7 @@ body {
     display: flex;
     flex-direction: column;
     color: white;
-    border-bottom: 5px solid #000
+    border-bottom: 5px solid #000;
 }
 .overlay {
     position: absolute;
@@ -34,7 +44,7 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, .4);
-    z-index: 0
+    z-index: 0;
 }
 
 /* VALIKON TYYLIT */
@@ -54,7 +64,6 @@ body {
     transform: translateY(0);
 }
 
-/* Hamburger Kuvake */
 .menu-toggle {
     position: relative;
     z-index: 60;
@@ -80,17 +89,10 @@ body {
     transition: all 0.3s ease;
 }
 
-.menu-toggle.active .bar:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-.menu-toggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-.menu-toggle.active .bar:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-}
+.menu-toggle.active .bar:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.menu-toggle.active .bar:nth-child(2) { opacity: 0; }
+.menu-toggle.active .bar:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* Valikkolinkkien tyylit */
 .menu-link {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.8rem;
@@ -99,27 +101,19 @@ body {
     color: white;
     transition: color 0.3s;
 }
-.menu-link:hover {
-    color: #F5BC1C;
-}
+.menu-link:hover { color: #F5BC1C; }
+
 @media (min-width: 768px) {
-        .menu-link {
-            font-size: 2.5rem;
-        }
+    .menu-link { font-size: 2.5rem; }
 }
 
-/* Logo-tyylit valikossa */
 .logo-in-menu {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: none;
     cursor: pointer;
     transition: opacity 0.3s;
-}
-.logo-in-menu:hover {
-    opacity: 0.8;
 }
 
 .logo-svg-menu {
@@ -127,16 +121,11 @@ body {
     width: 80px;
     height: 80px;
 }
+
 .logo-text-menu {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
     color: #ffffff;
     font-size: 28px;
-    line-height: 1.2;
-}
-.logo-bold-style-menu {
-    font-weight: 700;
-    color: #ffffff;
 }
 
 .icon-circle {
@@ -148,92 +137,28 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 24px;
-    transition: all 0.3s ease;
 }
 
 .divider-stick {
     background-color: #cbd5e1;
-    flex-shrink: 0;
 }
+
 @media (min-width: 768px) {
-    .divider-stick {
-        width: 0.1cm;
-        height: auto;
-        align-self: stretch;
-    }
+    .divider-stick { width: 2px; align-self: stretch; }
 }
 @media (max-width: 767px) {
-    .divider-stick {
-        width: 100%;
-        height: 0.1cm;
-        margin: 3rem 0;
-    }
+    .divider-stick { width: 100%; height: 2px; margin: 3rem 0; }
 }
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
-.animate-fade {
-    animation: fadeIn 0.6s ease-out forwards;
-}
-
-/* Footer erityistyylit */
-.footer-bg {
-    background-color: #0f172a;
-}
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
-
-body { 
-    font-family: 'Inter', sans-serif; 
-    margin: 0; 
-}
-
-:root {
-    --primary-color: #2563eb;
-    --accent-color: #3b82f6;
-    --bg-dark: #0f172a;
-    --card-bg: #1e293b;
-    --text-light: #f8fafc;
-    --text-dim: #94a3b8;
-}
-
-.ramirent-yellow { 
-    background-color: #FFD200; 
-}
-
-.contact-card { 
-    transition: all 0.3s ease; 
-}
+.animate-fade { animation: fadeIn 0.6s ease-out forwards; }
 
 .stat-card {
     background: var(--card-bg);
     border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    transition: all 0.3s ease;
 }
-
-.stat-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
-    border-color: var(--accent-color);
-}
-
-.stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: var(--accent-color);
-}
-
-.stat-number {
-    background: linear-gradient(135deg, #fff 0%, var(--accent-color) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
+.stat-card:hover { transform: translateY(-5px); border-color: var(--accent-color); }
