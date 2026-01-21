@@ -1,31 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menuToggle');
-    const offCanvasMenu = document.getElementById('offCanvasMenu');
-    const menuLogoLink = document.getElementById('menuLogoLink');
-    const menuLinks = document.querySelectorAll('.menu-link');
+document.addEventListener('DOMContentLoaded', function() {
+    var menuToggle = document.getElementById('menuToggle');
+    var offCanvasMenu = document.getElementById('offCanvasMenu');
+    var menuLogoLink = document.getElementById('menuLogoLink');
+    var menuLinks = document.querySelectorAll('.menu-link');
 
     // Valikon avaus ja sulku
-    const toggleMenu = () => {
+    function toggleMenu() {
         offCanvasMenu.classList.toggle('active');
         menuToggle.classList.toggle('active');
-        const isExpanded = menuToggle.classList.contains('active');
+        var isExpanded = menuToggle.classList.contains('active');
         menuToggle.setAttribute('aria-expanded', isExpanded);
-    };
+    }
 
     menuToggle.addEventListener('click', toggleMenu);
 
     // Sulje valikko linkeistä
-    menuLinks.forEach(link => {
-        link.addEventListener('click', () => {
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
             offCanvasMenu.classList.remove('active');
             menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
         });
     });
 
     if(menuLogoLink) {
-        menuLogoLink.addEventListener('click', () => {
+        menuLogoLink.addEventListener('click', function() {
             offCanvasMenu.classList.remove('active');
             menuToggle.classList.remove('active');
+            menuToggle.setAttribute('aria-expanded', 'false');
         });
     }
 
