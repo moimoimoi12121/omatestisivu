@@ -28,7 +28,7 @@ body {
 }
 .hero-section {
     height: 85vh;
-    background-image: url('https://images.pexels.com/photos/33632865/pexels-photo-33632865.jpeg');
+    background-image: url('hero-bg.jpeg');
     background-size: cover;
     background-position: center 20%;
     position: relative;
