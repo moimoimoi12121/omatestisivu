@@ -15,72 +15,90 @@
 </head>
 <body class="antialiased">
 
-    <header class="w-full px-6 md:px-12 lg:px-24 py-4 md:py-6 flex justify-between items-center border-b border-gray-900 navbar-dark-blue fixed top-0 left-0 right-0 z-[60]">
-        <a href="#" class="flex items-center nav-logo-base cursor-pointer hover:opacity-80 transition duration-150">
-            <svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="12" fill="none"/>
-                <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
-            </svg>
-            <span class="text-white text-lg ml-2"><span class="logo-bold">Strong</span>Site</span>
-        </a>
-        
-        <nav class="flex-grow flex justify-end">
-            <div class="flex items-center space-x-8 lg:space-x-12">
-                <a href="#" class="px-4 py-2 border border-white rounded-full font-semibold transition duration-300 text-white hover:bg-white hover:text-black hidden lg:block">Yhteystiedot</a>
-                <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">Tutustu meihin</a>
-                <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">UKK</a>
-                <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">Palvelumme</a>
-                
-                <div class="flex items-center ml-6 sm:ml-0">
-                    <button class="menu-toggle" id="menuToggle" aria-label="Avaa valikko">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+<header class="w-full px-6 md:px-12 lg:px-24 py-4 md:py-6 flex justify-between items-center border-b border-gray-900 navbar-dark-blue fixed top-0 left-0 right-0 z-[60]">
+    <a href="#" class="flex items-center nav-logo-base cursor-pointer hover:opacity-80 transition duration-150">
+        <svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="12" fill="none"/>
+            <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
+        </svg>
+        <span class="text-white text-lg ml-2"><span class="logo-bold">Strong</span>Site</span>
+    </a>
     
-    <nav class="off-canvas-menu" id="offCanvasMenu" role="navigation">
-        <div class="h-full w-full px-6 md:px-12 lg:px-24 pt-32 pb-16 flex flex-col md:flex-row items-center justify-between">
-            <div class="flex flex-col md:flex-row gap-8 md:gap-20 order-2 md:order-1 mt-12 md:mt-0">
-                <div class="flex flex-col items-center md:items-end space-y-4 md:space-y-8">
-                    <a href="#" class="menu-link">Etusivu</a>
-                    <a href="#" class="menu-link">Palvelut</a>
-                    <a href="#" class="menu-link">UKK</a>
-                </div>
-                <div class="hidden md:block w-px bg-gray-600 h-64 self-center opacity-40"></div>
-                <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-8">
-                    <a href="#" class="menu-link">Yhteystiedot</a>
-                <a href="miksi-valita-meidat/" class="text-white hover:text-yellow-400 ...">Miksi valita meidät?</a>
-                    <a href="#" class="menu-link">Tutustu meihin</a>
-                </div>
+    <nav class="flex-grow flex justify-end">
+        <div class="flex items-center space-x-8 lg:space-x-12">
+
+            <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">
+                Palvelumme
+            </a>
+
+            <a href="miksi-valita-meidat/" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">
+                Tutustu meihin
+            </a>
+
+            <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">
+                UKK
+            </a>
+
+            <a href="#" class="px-4 py-2 border border-white rounded-full font-semibold transition duration-300 text-white hover:bg-white hover:text-black hidden lg:block">
+                Yhteystiedot
+            </a>
+            
+            <div class="flex items-center ml-6 sm:ml-0">
+                <button class="menu-toggle" id="menuToggle" aria-label="Avaa valikko">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
 
-            <div class="flex flex-col items-center md:items-end text-center md:text-right space-y-16 order-1 md:order-2">
-                <a href="miksi-valita-meidat/" class="logo-in-menu" id="menuLogoLink">
-                    <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg-menu">
-                        <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="12" fill="none"/>
-                        <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
-                    </svg>
-                    <span class="logo-text-menu">
-                        <span class="logo-bold-style-menu">Strong</span>Site
-                    </span>
-                </a>
-                
-                <div class="text-base md:text-lg text-gray-300 space-y-2 border-r-0 md:border-r-2 border-gray-500 md:pr-6">
-                    <p class="font-semibold text-white">Ota yhteyttä</p>
-                    <p>contact@strongsite.fi</p>
-                    <p>+358 12 345 6789</p>
-                    <p>Helsinki, Suomi</p>
-                    <p class="pt-4 text-sm italic text-gray-400">Kysy meiltä • vastaamme nopeasti</p>
-                </div>
-            </div>
         </div>
     </nav>
-    
+</header>
+
+  <nav class="off-canvas-menu" id="offCanvasMenu" role="navigation">
+    <div class="h-full w-full px-6 md:px-12 lg:px-24 pt-32 pb-16 flex flex-col md:flex-row items-center justify-between">
+
+        <div class="flex flex-col md:flex-row gap-8 md:gap-20 order-2 md:order-1 mt-12 md:mt-0">
+
+            <div class="flex flex-col items-center md:items-end space-y-4 md:space-y-8">
+                <a href="#" class="menu-link">Etusivu</a>
+                <a href="#" class="menu-link">Palvelut</a>
+                <a href="miksi-valita-meidat/" class="menu-link">Tutustu </a>
+            </div>
+
+            <div class="hidden md:block w-px bg-gray-600 h-64 self-center opacity-40"></div>
+
+            <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-8">
+                <a href="#" class="menu-link">UKK</a>
+                <a href="#" class="menu-link">Tutustu meihin</a>
+                <a href="#" class="menu-link">Yhteystiedot</a>
+            </div>
+
+        </div>
+
+        <div class="flex flex-col items-center md:items-end text-center md:text-right space-y-16 order-1 md:order-2">
+            <a href="miksi-valita-meidat/" class="logo-in-menu" id="menuLogoLink">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg-menu">
+                    <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="12" fill="none"/>
+                    <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
+                </svg>
+                <span class="logo-text-menu">
+                    <span class="logo-bold-style-menu">Strong</span>Site
+                </span>
+            </a>
+            
+            <div class="text-base md:text-lg text-gray-300 space-y-2 border-r-0 md:border-r-2 border-gray-500 md:pr-6">
+                <p class="font-semibold text-white">Ota yhteyttä</p>
+                <p>contact@strongsite.fi</p>
+                <p>+358 12 345 6789</p>
+                <p>Helsinki, Suomi</p>
+                <p class="pt-4 text-sm italic text-gray-400">Kysy meiltä • vastaamme nopeasti</p>
+            </div>
+        </div>
+
+    </div>
+</nav>
+ 
     <div class="pt-[90px]">
         <div class="hero-section">
             <div class="overlay"></div>
