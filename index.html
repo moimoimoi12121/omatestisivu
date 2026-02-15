@@ -3,103 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="robots" content="noindex">
-
     <title>Verkkosivut yrityksille – älä maksa liikaa | StrongSite</title>
-    
     <meta name="description" content="Verkkosivut nopeasti ja kustannustehokkaasti. Vain 4 vaihetta kohti valmiita sivuja – Aloitetaan yhteistyö täältä! →">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .bar { display: block; width: 25px; height: 3px; margin: 5px; background-color: white; }
+    </style>
 </head>
-<body class="antialiased">
+<body class="antialiased text-white font-sans">
 
-<header class="w-full px-6 md:px-12 lg:px-24 py-4 md:py-6 flex justify-between items-center border-b border-gray-900 navbar-dark-blue fixed top-0 left-0 right-0 z-[60]">
-    <a href="#" class="flex items-center nav-logo-base cursor-pointer hover:opacity-80 transition duration-150">
-        <svg width="32" height="32" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="12" fill="none"/>
-            <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
-        </svg>
-        <span class="text-white text-lg ml-2"><span class="logo-bold">Strong</span>Site</span>
-    </a>
-    
+<header class="w-full px-6 md:px-12 lg:px-24 py-4 md:py-6 flex justify-between items-center border-b border-gray-800 bg-gray-900 fixed top-0 left-0 right-0 z-[60]">
+    <a href="/" class="text-white text-xl tracking-wider">
+    <span class="font-bold">Smart</span><span class="font-normal">Focus</span>
+</a>
     <nav class="flex-grow flex justify-end">
         <div class="flex items-center space-x-8 lg:space-x-12">
-
-            <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">
-                Palvelumme
-            </a>
-
-            <a href="miksi-valita-meidat/" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">
-                Tutustu meihin
-            </a>
-
-            <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">
-                UKK
-            </a>
-
-            <a href="#" class="px-4 py-2 border border-white rounded-full font-semibold transition duration-300 text-white hover:bg-white hover:text-black hidden lg:block">
-                Yhteystiedot
-            </a>
-            
-            <div class="flex items-center ml-6 sm:ml-0">
-                <button class="menu-toggle" id="menuToggle" aria-label="Avaa valikko">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            </div>
-
+            <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">Palvelumme</a>
+            <a href="miksi-valita-meidat/" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">Tutustu meihin</a>
+            <a href="#" class="text-white hover:text-yellow-400 transition duration-150 hidden lg:block">UKK</a>
+            <a href="#" class="px-4 py-2 border border-white rounded-full font-semibold transition duration-300 text-white hover:bg-white hover:text-black hidden lg:block">Yhteystiedot</a>
         </div>
     </nav>
 </header>
 
-  <nav class="off-canvas-menu" id="offCanvasMenu" role="navigation">
-    <div class="h-full w-full px-6 md:px-12 lg:px-24 pt-32 pb-16 flex flex-col md:flex-row items-center justify-between">
-
-        <div class="flex flex-col md:flex-row gap-8 md:gap-20 order-2 md:order-1 mt-12 md:mt-0">
-
-            <div class="flex flex-col items-center md:items-end space-y-4 md:space-y-8">
-                <a href="#" class="menu-link">Etusivu</a>
-                <a href="#" class="menu-link">Palvelut</a>
-                <a href="miksi-valita-meidat/" class="menu-link">Miksi valita meidät?</a>
-            </div>
-
-            <div class="hidden md:block w-px bg-gray-600 h-64 self-center opacity-40"></div>
-
-            <div class="flex flex-col items-center md:items-start space-y-4 md:space-y-8">
-                <a href="#" class="menu-link">UKK</a>
-                <a href="#" class="menu-link">Tutustu meihin</a>
-                <a href="#" class="menu-link">Yhteystiedot</a>
-            </div>
-
-        </div>
-
-        <div class="flex flex-col items-center md:items-end text-center md:text-right space-y-16 order-1 md:order-2">
-            <a href="miksi-valita-meidat/" class="logo-in-menu" id="menuLogoLink">
-                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg-menu">
-                    <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="12" fill="none"/>
-                    <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
-                </svg>
-                <span class="logo-text-menu">
-                    <span class="logo-bold-style-menu">Strong</span>Site
-                </span>
-            </a>
-            
-            <div class="text-base md:text-lg text-gray-300 space-y-2 border-r-0 md:border-r-2 border-gray-500 md:pr-6">
-                <p class="font-semibold text-white">Ota yhteyttä</p>
-                <p>contact@strongsite.fi</p>
-                <p>+358 12 345 6789</p>
-                <p>Helsinki, Suomi</p>
-                <p class="pt-4 text-sm italic text-gray-400">Kysy meiltä • vastaamme nopeasti</p>
-            </div>
-        </div>
-
-    </div>
-</nav>
- 
-    <div class="pt-[90px]">
+   <div class="pt-[90px]">
         <div class="hero-section">
             <div class="overlay"></div>
             <div class="w-full px-6 md:px-12 lg:px-24 flex-grow flex items-center relative z-10">
@@ -115,204 +44,198 @@
                             <a href="#" class="text-white font-medium hover:text-yellow-400 transition duration-300 px-5 py-3 text-lg">Tutustu palveluihimme!</a>
                         </div>
                     </div>
-                    <div class="hidden md:col-span-1 md:flex justify-center items-center">
-                        <div class="h-[18rem] lg:h-[22rem] w-[2px] bg-white opacity-80"></div>
-                    </div>
-                    <div class="md:col-span-1 flex justify-center md:justify-end items-center mt-10 md:mt-0 relative">
-                        <div class="text-center hero-logo-vertical">
-                            <svg width="180" height="180" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="mx-auto">
-                                <circle cx="60" cy="60" r="45" stroke="#F5BC1C" stroke-width="10" fill="none"/>
-                                <path d="M75 20L40 60H55L45 100L80 55H62L75 20Z" fill="#F5BC1C"/>
-                            </svg>
-                            <div class="text text-4xl block text-white mt-4"><span class="logo-bold">Strong</span><span>Site</span></div>
+
                         </div>
                     </div>
                 </div>
             </div>
             <div class="h-10 relative z-10"></div>
+<style>
+  
+  <style>
+    .tech-marquee-section {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        padding: 4rem 0;
+        background-color: #ffffff;
+        overflow: hidden;
+    }
+
+    .tech-intro-text {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #9ca3af;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 2.5rem;
+        text-align: center;
+        display: block;
+    }
+
+    @keyframes tech-scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+
+    .tech-marquee-wrapper {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 1.5rem 0;
+    }
+
+    /* Häivytysreunat */
+    .tech-marquee-wrapper::before,
+    .tech-marquee-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 15%;
+        height: 100%;
+        z-index: 2;
+        pointer-events: none;
+    }
+
+    .tech-marquee-wrapper::before {
+        left: 0;
+        background: linear-gradient(to right, white, transparent);
+    }
+
+    .tech-marquee-wrapper::after {
+        right: 0;
+        background: linear-gradient(to left, white, transparent);
+    }
+
+    .tech-marquee-content {
+        display: flex;
+        width: max-content;
+        animation: tech-scroll 40s linear infinite;
+    }
+
+    .tech-item {
+        display: flex;
+         Pelkistetty-align: center;
+        align-items: center;
+        padding: 0 2rem;
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: -0.04em;
+        color: #111111;
+        background: linear-gradient(180deg, #111111 20%, #777777 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        white-space: nowrap;
+    }
+
+    .tech-divider {
+        width: 2px;
+        height: 3rem;
+        background-color: #f3f4f6;
+        margin: 0 1rem;
+        flex-shrink: 0;
+        align-self: center;
+        border-radius: 4px;
+    }
+
+    /* Pysäytys hiirellä vietäessä (valinnainen) */
+    .tech-marquee-wrapper:hover .tech-marquee-content {
+        animation-play-state: paused;
+    }
+</style>
+
+<section class="tech-marquee-section">
+    <span class="tech-intro-text">Hyödynnämme johtavia työkaluja työskentelyssämme:</span>
+
+    <div class="tech-marquee-wrapper">
+        <div class="tech-marquee-content">
+            <div class="tech-item">ChatGPT</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Google Gemini</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">n8n</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Automaatio</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Generatiivinen AI</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Workflow Design</div>
+            <div class="tech-divider"></div>
+
+            <div class="tech-item">ChatGPT</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Google Gemini</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">n8n</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Automaatio</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Generatiivinen AI</div>
+            <div class="tech-divider"></div>
+            <div class="tech-item">Workflow Design</div>
+            <div class="tech-divider"></div>
         </div>
     </div>
+  </section>
+  
+  <script>
+  @keyframes scroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
 
-    <main class="w-full px-6 md:px-12 lg:px-24 py-16 bg-white text-gray-800">
-        
-        <section class="benefits-section bg-gray-50 py-24 rounded-3xl">
-            <div class="w-full px-6 md:px-12 lg:px-16">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-5xl font-bold text-slate-900">Miksi verkkosivut ovat välttämättömät nykypäivänä?</h2>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="benefit-card bg-white rounded-2xl p-8 lg:p-12 shadow hover:shadow-lg transition">
-                        <div class="icon-container mb-6">
-                            <svg class="icon-svg w-12 h-12 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-4">Löydettävyys</h3>
-                        <p class="text-gray-600 text-base leading-relaxed">Jos yritykselläsi ei ole verkkosivuja, olet näkymätön niille asiakkaille, jotka etsivät palveluitasi verkosta. Verkkosivusto varmistaa, että yrityksesi on löydettävissä.</p>
-                    </div>
+        .logo-slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
 
-                    <div class="benefit-card bg-white rounded-2xl p-8 lg:p-12 shadow hover:shadow-lg transition">
-                        <div class="icon-container mb-6">
-                            <svg class="icon-svg w-12 h-12 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-4">Luotettavuus</h3>
-                        <p class="text-gray-600 text-base leading-relaxed">Ensivaikutelma syntyy sekunneissa. Laadukas ja nykyaikainen ulkoasu rakentaa välitöntä luottamusta ja vakuuttaa asiakkaan osaamisestasi jo ennen ensimmäistä yhteydenottoa.</p>
-                    </div>
+        .logo-track {
+            display: flex;
+            width: max-content;
+            animation: scroll 25s linear infinite;
+            will-change: transform;
+        }
 
-                    <div class="benefit-card bg-white rounded-2xl p-8 lg:p-12 shadow hover:shadow-lg transition">
-                        <div class="icon-container mb-6">
-                            <svg class="icon-svg w-12 h-12 text-black" fill="currentColor" viewBox="0 0 24 24"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
-                        </div>
-                        <h3 class="text-2xl font-semibold mb-4">Palvelu 24/7</h3>
-                        <p class="text-gray-600 text-base leading-relaxed">Verkkosivut ovat työntekijä, joka ei nuku. Ne tarjoavat tietoa, vastaavat kysymyksiin ja ottavat vastaan yhteydenottoja ympäri vuorokauden, mikä tekee asioinnista helppoa asiakkaallesi.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-<div class="w-full px-6 py-20 bg-slate-50">
-  <!-- Header -->
-  <div class="text-center mb-16">
-    <h2 class="text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
-      Palvelumme
-    </h2>
-    <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-      Tarjoamme selkeitä kokonaisuuksia ilman piilokuluja. Kaikki hinnat alv 0%.
-    </p>
-  </div>
-    <!-- Pricing Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        .logo-slider:hover .logo-track {
+            animation-play-state: paused;
+        }
 
-      <!-- Hehku -->
-      <div class="relative flex flex-col p-8 rounded-3xl bg-white shadow-xl border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-200 text-slate-700">
-          Hehku
-        </div>
-        <div class="mb-6 p-3 rounded-2xl inline-block bg-slate-50 text-slate-600 w-fit">
-          <i data-lucide="zap" class="w-6 h-6"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-slate-900 mb-1">Hehku</h3>
-        <p class="text-sm font-medium text-blue-500 mb-4 uppercase tracking-wide">Yksinkertainen & Tehokas</p>
-        <div class="mb-6">
-          <span class="text-4xl font-black text-slate-900">490 €</span>
-          <span class="text-slate-400 text-sm ml-2">alv 0%</span>
-        </div>
-        <p class="text-slate-600 mb-8 text-sm leading-relaxed">
-          Täydellinen ensiaskel digitaaliseen näkyvyyteen. Nopeasti, vaivatta ja tyylillä.
-        </p>
-        <ul class="space-y-4 mb-10 flex-grow">
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-emerald-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Moderni One-pager sivu
-          </li>
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-emerald-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Mobiilioptimoitu vastaavuus
-          </li>
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-emerald-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Perus-SEO asetukset
-          </li>
-        </ul>
-        <button class="w-full py-4 px-6 rounded-2xl font-bold transition-all flex items-center justify-center bg-slate-900 text-white hover:bg-slate-800">
-          Aloita tästä <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
-        </button>
-      </div>
+        .logo-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 220px; 
+            height: 100px;
+            flex-shrink: 0;
+            font-weight: 800;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            color: #1a1a1a;
 
-      <!-- Loiste -->
-      <div class="relative flex flex-col p-8 rounded-3xl bg-white shadow-2xl border-2 border-blue-500 featured-scale z-10 transition-all duration-300 group">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-600 text-white">
-          Loiste
-        </div>
-        <div class="mb-6 p-3 rounded-2xl inline-block bg-blue-50 text-blue-600 w-fit">
-          <i data-lucide="sparkles" class="w-6 h-6"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-slate-900 mb-1">Loiste</h3>
-        <p class="text-sm font-medium text-blue-500 mb-4 uppercase tracking-wide">Kattava Ratkaisu</p>
-        <div class="mb-6">
-          <span class="text-4xl font-black text-slate-900">990 €</span>
-          <span class="text-slate-400 text-sm ml-2">alv 0%</span>
-        </div>
-        <p class="text-slate-600 mb-8 text-sm leading-relaxed">
-          Suosituin valinta kasvaville yrityksille. Enemmän tilaa tarinallesi ja palveluillesi.
-        </p>
-        <ul class="space-y-4 mb-10 flex-grow">
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-blue-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Etusivu + 4 strategista alasivua
-          </li>
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-blue-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Kevyt sisällöntuotannon tuki
-          </li>
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-blue-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Nopeusoptimoitu koodi
-          </li>
-        </ul>
-        <button class="w-full py-4 px-6 rounded-2xl font-bold transition-all flex items-center justify-center bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-200">
-          Valitse suosituin <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
-        </button>
-      </div>
+            border-right: 2px solid rgba(0,0,0,0.05);
+        }
 
-      <!-- Kruunu -->
-      <div class="relative flex flex-col p-8 rounded-3xl bg-white shadow-xl border border-slate-100 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 group">
-        <div class="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-slate-200 text-slate-700">
-          Kruunu
-        </div>
-        <div class="mb-6 p-3 rounded-2xl inline-block bg-slate-50 text-slate-600 w-fit">
-          <i data-lucide="crown" class="w-6 h-6"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-slate-900 mb-1">Kruunu</h3>
-        <p class="text-sm font-medium text-blue-500 mb-4 uppercase tracking-wide">Laaja & Räätälöity</p>
-        <div class="mb-6">
-          <span class="text-4xl font-black text-slate-900">alk. 1 490 €</span>
-          <span class="text-slate-400 text-sm ml-2">alv 0%</span>
-        </div>
-        <p class="text-slate-600 mb-8 text-sm leading-relaxed">
-          Kun tarvitset enemmän massaa ja yksilöllisiä ratkaisuja brändisi tueksi.
-        </p>
-        <ul class="space-y-4 mb-10 flex-grow">
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-emerald-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Yli 5 sivua tai räätälöity rakenne
-          </li>
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-emerald-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Edistynyt visuaalinen asettelu
-          </li>
-          <li class="flex items-start text-sm text-slate-700">
-            <i data-lucide="check" class="text-emerald-500 w-5 h-5 mr-3 mt-0.5 flex-shrink-0"></i>
-            Brändin mukainen uniikki design
-          </li>
-        </ul>
-        <button class="w-full py-4 px-6 rounded-2xl font-bold transition-all flex items-center justify-center bg-slate-900 text-white hover:bg-slate-800">
-          Pyydä tarjous <i data-lucide="arrow-right" class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"></i>
-        </button>
-      </div>
-
-    </div>
-
-    <!-- Footer Note -->
-    <div class="mt-16 text-center">
-      <p class="text-slate-500 text-sm italic">
-        * Kaikkiin paketteihin sisältyy perustason opastus sivuston käyttöön.
-      </p>
-    </div>
-</div>
-
-    <script src="script.js"></script>
-<section class="antialiased font-['Inter',_sans-serif] py-16 px-4 md:px-8 bg-transparent">
-    
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
-        
-        /* Brändin keltainen korostusväri */
-        .cta-brand-accent { background-color: #FFD200; }
-        /* Pehmeä varjo kortille */
-        .cta-card-shadow { box-shadow: 0 30px 60px rgba(0,0,0,0.06); }
-        /* Estää linkin alleviivauksen joissain CMS-järjestelmissä */
-        .cta-no-underline { text-decoration: none !important; }
-    </style>
-
-    <div class="cta-card-shadow mx-auto w-full max-w-6xl bg-white rounded-[2.5rem] p-10 md:px-20 md:py-24 border border-gray-50">
+        @media (prefers-color-scheme: dark) {
+            .logo-item { 
+                color: #ffffff; 
+                border-right-color: rgba(255,255,255,0.1); 
+            }
+            .bg-white { background-color: #0f172a !important; }
+            .text-black { color: #ffffff !important; }
+            .border-gray-200 { border-color: #1e293b !important; }
+  <section>
+  title="Yhteystieto CTA"
+  style="width: 100vw; border: none; min-height: 600px; margin-left: calc(-50vw + 50%);"
+  srcdoc='
+    <!DOCTYPE html>
+    <html lang="fi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+ <div class="cta-card-shadow mx-auto w-full max-w-6xl bg-white rounded-[2.5rem] p-10 md:px-20 md:py-24 border border-gray-50">
         
         <div class="w-full mb-12 md:mb-16">
             <h2 class="text-3xl md:text-6xl font-extrabold text-gray-900 tracking-tight leading-tight">
@@ -361,7 +284,6 @@
         </div>
     </div>
 </section>
-
 
   <footer class="site-footer">
     <div class="footer-main-content">
@@ -416,7 +338,6 @@
 </footer>
 
 <style>
-    /* --- CSS - TYYLIT --- */
     .site-footer {
         background-color: #1a1a1a;
         color: #ffffff;
@@ -426,7 +347,6 @@
         box-sizing: border-box;
     }
 
-    /* Sisältöalueen keskitys */
     .footer-main-content {
         max-width: 1200px;
         margin: 0 auto;
@@ -448,7 +368,6 @@
         color: #ffffff;
     }
 
-    /* Sininen aksenttiviiva otsikon alla */
     .footer-heading::after {
         content: '';
         display: block;
@@ -496,8 +415,7 @@
     .footer-contact a:hover {
         color: #ffffff;
     }
-
-    /* Alapalkki (Legal bar) */
+  
     .footer-legal-bar {
         background-color: #111111;
         padding: 25px 20px;
@@ -545,8 +463,6 @@
         color: #ffffff;
         text-decoration: underline;
     }
-
-    /* Responsiivisuus mobiilille */
     @media (max-width: 768px) {
         .footer-legal-container {
             flex-direction: column;
@@ -566,7 +482,6 @@
 </style>
 
 <script>
-    /* --- JS - VUOSILUVUN PÄIVITYS --- */
     (function() {
         document.addEventListener('DOMContentLoaded', function() {
             var yearElement = document.getElementById('current-year');
@@ -578,7 +493,6 @@
 </script>
 <script>
 (function () {
-  /* ===== CSS ===== */
   const style = document.createElement("style");
   style.innerHTML = `
     :root {
@@ -623,8 +537,6 @@
     }
   `;
   document.head.appendChild(style);
-
-  /* ===== HTML ===== */
   const wrapper = document.createElement("div");
   wrapper.className = "vertical-steps";
   wrapper.innerHTML = `
