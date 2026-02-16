@@ -35,43 +35,39 @@
 
 
 <div class="pt-[49px]">
-    <section class="hero-section relative">
+  <section class="hero-section relative bg-[url('hero-image.jpg')] bg-cover bg-center min-h-[70vh]">
+    <!-- Dark overlay -->
+    <div class="overlay absolute inset-0 bg-black bg-opacity-50"></div>
 
-        <div class="overlay absolute inset-0"></div>
-
-        <div class="relative z-10 w-full px-6 md:px-12 lg:px-24 flex items-center min-h-[70vh]">
-            <div class="grid grid-cols-1 md:grid-cols-5 gap-8 w-full">
-
-                <div class="md:col-span-3 space-y-6">
-
-                    <h1 class="text-5xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
-                        Tyylikkäät verkkosivut edullisesti ja kustannustehokkaasti
-                    </h1>
-
-                    <h2 class="text-xl md:text-2xl font-light max-w-2xl text-gray-200">
-                        Toimivat verkkosivut rakentavat luottamusta, erottavat kilpailijoista ja vahvistavat viestiä.
-                    </h2>
-
-                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
-
-                        <a href="#" class="text-white border-2 border-white rounded-full px-8 py-3 flex items-center font-medium hover:bg-white hover:text-gray-900 transition duration-300 whitespace-nowrap text-lg">
-                            Ota yhteyttä
-                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                      d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                            </svg>
-                        </a>
-
-                        <a href="#" class="text-white font-medium hover:text-yellow-400 transition duration-300 px-5 py-3 text-lg">
-                            Tutustu palveluihimme!
-                        </a>
-
-                    </div>
-
+    <!-- Hero content -->
+    <div class="relative z-10 w-full px-6 md:px-12 lg:px-24 flex items-center min-h-[70vh]">
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-8 w-full">
+            <div class="md:col-span-3 space-y-6">
+                <h1 class="text-5xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-white">
+                    Tyylikkäät verkkosivut edullisesti ja kustannustehokkaasti
+                </h1>
+                <h2 class="text-xl md:text-2xl font-light max-w-2xl text-gray-200">
+                    Toimivat verkkosivut rakentavat luottamusta, erottavat kilpailijoista ja vahvistavat viestiä.
+                </h2>
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#"
+                       class="text-white border-2 border-white rounded-full px-8 py-3 flex items-center font-medium hover:bg-white hover:text-gray-900 transition duration-300 whitespace-nowrap text-lg">
+                        Ota yhteyttä
+                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+                    <a href="#"
+                       class="text-white font-medium hover:text-yellow-400 transition duration-300 px-5 py-3 text-lg">
+                        Tutustu palveluihimme!
+                    </a>
                 </div>
-
             </div>
         </div>
+    </div>
+</section>
+
 <section class="tech-marquee-section">
   <span class="tech-intro-text">Hyödynnämme johtavia työkaluja työskentelyssämme:</span>
   <div class="tech-marquee-wrapper">
