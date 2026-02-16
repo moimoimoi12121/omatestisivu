@@ -1,9 +1,22 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+const marquee = document.querySelector('.tech-marquee-content');
+let scrollAmount = 0;
+
+function animateMarquee() {
+    scrollAmount -= 1;
+    if (Math.abs(scrollAmount) >= marquee.scrollWidth / 2) {
+        scrollAmount = 0;
+    }
+    marquee.style.transform = `translateX(${scrollAmount}px)`;
+    requestAnimationFrame(animateMarquee);
+}
+
+animateMarquee();
+
+const heroTitle = document.querySelector('.hero-title');
+
+window.addEventListener('load', () => {
+    if (heroTitle) {
+        heroTitle.style.opacity = '1';
+        console.log('Main section ladattu.');
+    }
 });
