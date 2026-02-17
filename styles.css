@@ -353,3 +353,13 @@
             justify-content: center;
         }
     }
+
+
+.hero-section {
+    position: relative;
+    background-color: #111827;
+    background-image: url("tausta.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
