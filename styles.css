@@ -363,3 +363,132 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+}
+
+.section {
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.challenge {
+  background: #ffffff;
+  border: 1px solid #fee2e2;
+}
+
+.challenge .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #dc2626;
+}
+
+.challenge .card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.challenge .card-content .item {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.challenge .dot {
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #f87171;
+  border-radius: 50%;
+}
+
+.challenge .card-content h4 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.challenge .card-content p {
+  color: #4b5563;
+  font-size: 0.875rem;
+}
+
+.benefits {
+  background: #064e3b;
+  color: #ecfdf5;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.benefits .card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4ade80;
+}
+
+.benefits .card-header h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.benefits .card-content .benefit-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.benefits .icon {
+  background: #065f46;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: #4ade80;
+  flex-shrink: 0;
+}
+
+.benefits .text h4 {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #ffffff;
+}
+
+.benefits .text p {
+  color: #d1fae5;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
