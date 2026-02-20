@@ -371,11 +371,11 @@ body {
 }
 
 .section {
-  padding: 2rem 1rem;
-  min-height: auto;
+  padding: 0 1rem;      /* ylä- ja alapadding nollattu */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  min-height: auto;
 }
 
 .container {
