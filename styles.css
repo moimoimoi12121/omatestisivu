@@ -92,28 +92,9 @@
 }
 
 @media (max-width: 1024px) {
-    /* 1. Piilotetaan koko header mobiilissa */
     .site-header {
         display: none;
     }
-
-    /* 2. Pienennetään rullaava teksti (marquee) */
-    .tech-item {
-        font-size: 1.5rem; 
-        padding: 0 1rem;
-    }
-
-    /* 3. Pienennetään pystyviiva tekstien välissä */
-    .tech-divider {
-        height: 1.5rem;
-        margin: 0 0.5rem;
-    }
-
-    /* 4. Tiivistetään osion tyhjää tilaa ylhäällä ja alhaalla */
-    .tech-marquee-section {
-        padding: 2rem 0;
-    }
-}
 
 .tech-marquee-section {
     font-family: 'Plus Jakarta Sans', sans-serif;
