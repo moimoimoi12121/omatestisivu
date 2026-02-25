@@ -656,11 +656,17 @@ body {
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
-.service-card {
-    transition: all 0.3s ease;
-}
+        .service-card:hover {
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+        }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-}
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+        }
+
+        .service-number {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
