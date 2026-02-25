@@ -10,16 +10,14 @@ function animateMarquee() {
     requestAnimationFrame(animateMarquee);
 }
 
-animateMarquee();
+if (marquee) {
+    animateMarquee();
+}
 
 const heroTitle = document.querySelector('.hero-title');
-
 window.addEventListener('load', () => {
     if (heroTitle) {
         heroTitle.style.opacity = '1';
         console.log('Main section ladattu.');
     }
-    
-document.addEventListener("DOMContentLoaded", function () {
-    lucide.createIcons();
 });
