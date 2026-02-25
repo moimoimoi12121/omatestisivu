@@ -655,17 +655,3 @@ body {
 .hero-section p {
   font-size: clamp(1rem, 2vw, 1.4rem);
 }
-
-html, body {
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.site-footer {
-  margin-top: auto;
-}
