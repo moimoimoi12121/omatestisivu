@@ -663,7 +663,7 @@ body {
     color: #1e293b;
 }
 
-.services-section {
+.palvelumme {
     padding: 80px 20px;
 }
 
@@ -672,19 +672,19 @@ body {
     margin: 0 auto;
 }
 
-.services-grid {
+.palvelumme-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 50px;
 }
 
-.service-card {
+.palvelumme-card {
     border-left: 3px solid #e2e8f0;
     padding: 20px 0 20px 25px;
     transition: 0.3s ease;
 }
 
-.service-card:hover {
+.palvelumme-card:hover {
     transform: translateY(-5px);
     border-color: #2563eb;
 }
@@ -702,22 +702,22 @@ body {
     margin-bottom: 20px;
 }
 
-.service-card h3 {
+.palvelumme-card h3 {
     margin: 0 0 15px;
     font-size: 22px;
 }
 
-.service-card p {
+.palvelumme-card p {
     color: #64748b;
     margin-bottom: 15px;
 }
 
-.service-card ul {
+.palvelume-card ul {
     padding-left: 18px;
     margin: 0;
     color: #475569;
 }
 
-.service-card li {
+.palvelumme-card li {
     margin-bottom: 6px;
 }
