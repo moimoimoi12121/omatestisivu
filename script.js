@@ -20,4 +20,6 @@ window.addEventListener('load', () => {
         heroTitle.style.opacity = '1';
         console.log('Main section ladattu.');
     }
+
+    lucide.createIcons();
 });
